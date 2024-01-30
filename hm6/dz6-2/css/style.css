@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: silver;
+    padding: 20px;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+    margin: 0 auto;
+}
+
+input {
+    border: 2px solid teal;
+    font-size: 20px;
+    height: 40px;
+    width: 500px;
+    padding-left: 5px;
+}
+
+#create_button {
+    border: 2px solid teal;
+    width: 240px;
+    height: 40px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.1);
+    font-size: 20px;
+    border-radius: 5px; 
+    margin-left: 10px; 
+}
+
+#todo_list {
+    margin: 20px auto; 
+    width: 750px;
+}
+
+.block_text {
+    width: 100%;
+    border: 2px solid teal;
+    padding: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease; 
+}
+
+.block_text:hover {
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+h3 {
+    font-size: 25px;
+    transition: text-decoration 0.3s ease; 
+}
+
+.div_buttons {
+    display: flex;
+    width: 320px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.delete_button,
+.edit_button {
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.delete_button {
+    background-color: darkred;
+}
+
+.edit_button {
+    background-color: darkgreen;
+}
+
+.toogle {
+    text-decoration: line-through;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid darkgreen; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px; 
+}
+
+.modal input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+}
+
+.modal button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px; 
+    margin-left: 19px;
+}
+
